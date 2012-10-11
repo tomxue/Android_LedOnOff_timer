@@ -1,0 +1,8 @@
+test
+    tested on HTC Sensation XE G18
+
+issue
+    the led color cannot be changed, it is fixed to light green
+    
+    possible reason:
+        the kernel code does not implement this color setting    
