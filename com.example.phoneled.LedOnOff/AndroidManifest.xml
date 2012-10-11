@@ -16,10 +16,14 @@
             android:label="@string/title_activity_led_on_off" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".LEDService"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>
