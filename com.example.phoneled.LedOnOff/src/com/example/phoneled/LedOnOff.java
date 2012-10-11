@@ -26,9 +26,10 @@ public class LedOnOff extends Activity {
 					boolean isChecked) {
 				NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 				Notification notification = new Notification();
+				// notification.icon = R.drawable.someicon;  // there should be spec for the icon
 				if (isChecked) {
 					// 这里是颜色，我们可以尝试改变，理论上0xFF0000是红色，0x00FF00是绿色
-					notification.ledARGB = 0xFFFF0000;
+					notification.ledARGB = 0xFFFFFFFF;
 					notification.ledOnMS = 1000;
 					notification.ledOffMS = 100;
 					notification.flags = Notification.FLAG_SHOW_LIGHTS;
